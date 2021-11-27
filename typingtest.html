@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Simple Speed Typer</title>
+ 
+    
+    <link rel="stylesheet" href="typingstyle.css">
+</head>
+<body>
+	
+	
+  <div class="container">
+    <div class="heading">
+      Speed Typing Test
+    </div>
+    <div class="header">
+      <div class="wpm">
+        <div class="header_text">WPM</div>
+        <div class="curr_wpm">100</div>
+      </div>
+      <div class="cpm">
+        <div class="header_text">CPM</div>
+        <div class="curr_cpm">100</div>
+      </div>
+      <div class="errors">
+        <div class="header_text">Errors</div>
+        <div class="curr_errors">0</div>
+      </div>
+      <div class="timer">
+        <div class="header_text">Time</div>
+        <div class="curr_time">30s</div>
+      </div>
+      <div class="accuracy">
+        <div class="header_text">% Accuracy</div>
+        <div class="curr_accuracy">100</div>
+      </div>
+    </div>
+ 
+    <div class="quote">
+      Click to start the game.
+    </div>
+    <textarea class="input input_area"
+      placeholder="type here..."
+      oninput="processText()"
+      onfocus="starttheGame()">
+    </textarea>
+    <button class="restart_button"
+      onclick="resetValues()">
+      Restart
+    </button>
+  </div>
+	
+ 
+  <!-- link the JavaScript file here -->
+  <script src="typing.js">
+  </script>
+</body>
+</html>
